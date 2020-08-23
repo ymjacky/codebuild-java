@@ -1,5 +1,21 @@
 version: 0.2 
 
+batch:
+  build-matrix:
+    static:
+      ignore-failure: false
+      env:
+        type: LINUX_CONTAINER
+        privileged-mode: true
+    dynamic:
+      env:
+        image:
+          - aws/codebuild/amazonlinux2-x86_64-standard:3.0
+        variables:
+          MY_VAR:
+            - VALUE1
+            - VALUE2
+            - VALUE3
 phases: 
   install: 
     commands:
