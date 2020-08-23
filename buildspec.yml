@@ -36,4 +36,4 @@ reports:
   unittest-rep-group:
     files:
       - '**/*'
-    base-directory: build/reports/
+    base-directory: build/test-reports/
