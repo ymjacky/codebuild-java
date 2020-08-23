@@ -27,7 +27,6 @@ phases:
       - gradle clean
       - gradle assemble
       - gradle test -i --tests $MY_VAR
-
 artifacts:
   files:
     - build/reports/**/*
