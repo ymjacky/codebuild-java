@@ -13,9 +13,9 @@ batch:
           - aws/codebuild/amazonlinux2-x86_64-standard:3.0
         variables:
           MY_VAR:
-            - VALUE1
-            - VALUE2
-            - VALUE3
+            - "codebuild.java.AppTest"
+            - "codebuild.java.IoTest"
+            - "codebuild.java.UserTest"
 phases: 
   install: 
     commands:
@@ -26,4 +26,4 @@ phases:
       - echo $MY_VAR
       - gradle clean
       - gradle assemble
-      - gradle test
+      - gradle test --tests $MY_VAR
