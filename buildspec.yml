@@ -22,7 +22,7 @@ phases:
       - gradle -v 
   build: 
     commands: 
-      - echo "var = ${MY_VAR}"
+      - echo "yeah------"
       - gradle clean
-      # - gradle assemble
-      # - gradle test
+      - gradle assemble
+      - gradle test
