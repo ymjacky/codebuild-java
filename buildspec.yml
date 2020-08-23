@@ -28,8 +28,8 @@ phases:
       - gradle assemble
       - gradle test -i --tests $MY_VAR
 
-reports:
-  unittest-rep-group:
-    files:
-      - '**/*'
-    base-directory: reports/
+artifacts:
+  files:
+    - build/reports/**/*
+  discard-paths: no
+  
