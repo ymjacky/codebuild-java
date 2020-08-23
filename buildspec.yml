@@ -26,4 +26,4 @@ phases:
       - echo $MY_VAR
       - gradle clean
       - gradle assemble
-      - gradle test --tests $MY_VAR
+      - gradle test -i --tests $MY_VAR
