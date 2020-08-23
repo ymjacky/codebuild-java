@@ -31,3 +31,9 @@ artifacts:
   files:
     - build/reports/**/*
   discard-paths: no
+
+reports:
+  unittest-rep-group:
+    files:
+      - '**/*'
+    base-directory: build/reports/
