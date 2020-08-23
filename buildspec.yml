@@ -32,4 +32,3 @@ artifacts:
   files:
     - build/reports/**/*
   discard-paths: no
-  
